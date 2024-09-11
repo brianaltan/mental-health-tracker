@@ -25,8 +25,7 @@ SECRET_KEY = 'django-insecure-o2r7dihh(gu)yryij9k#o+r$s!bv0z@8*r$z9yr2lb2u6+!rwr
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["localhost", "127.0.0.1", "brian-altan-mentalhealthtracker.pbp.cs.ui.ac.id"]
-
+ALLOWED_HOSTS = ["localhost", "127.0.0.1", "http://brian-altan-mentalhealthtracker.pbp.cs.ui.ac.id", "https://brian-altan-mentalhealthtracker.pbp.cs.ui.ac.id"]
 # Application definition
 
 INSTALLED_APPS = [
@@ -54,7 +53,7 @@ ROOT_URLCONF = 'mental_health_tracker.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR / 'templates'], # Tambahkan konten baris ini
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
